@@ -9,8 +9,8 @@ use Subito\Models\SubitoDateModel;
 class SubitoDateModelTest extends PHPUnit_Framework_TestCase {
 
     private $subitoDate;
-    private $startDate = '1976/12/31';
-    private $endDate = '2037/03/01';
+    private $startDate = '2016/12/25';
+    private $endDate = '2015/12/25';
 
     protected function setUp() {
         $this->subitoDate = new SubitoDateModel($this->startDate, $this->endDate);
