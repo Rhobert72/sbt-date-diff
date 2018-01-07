@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e8d8f66-126d-45d9-b05b-570253023a57" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" afterPath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" />
+      <change beforePath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelGetDiffDaysTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelLeapYearCounterTest.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubitoDateModelTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubitoDateModelTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -43,6 +44,16 @@
                 <element signature="e#1412#1635#0#PHP" expanded="false" />
                 <element signature="e#1641#1878#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubitoDateHelperTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Helpers/SubitoDateHelperTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -262,14 +273,7 @@
               <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Subito" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Subito" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
@@ -277,6 +281,7 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Subito" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="PHP" type="b2602c69:ProjectViewProjectNode" />
@@ -323,36 +328,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.SubitoDateModelTest">
+  <component name="RunManager" selected="PHPUnit.SubitoDateModelLeapYearCounterTest">
+    <configuration name="SubitoDateModelGetDiffDaysTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Subito\Tests\Models\SubitoDateModelGetDiffDaysTest" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelGetDiffDaysTest.php" scope="Class" />
+    </configuration>
+    <configuration name="SubitoDateModelLeapYearCounterTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Subito\Tests\Models\SubitoDateModelLeapYearCounterTest" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelLeapYearCounterTest.php" scope="Class" />
+    </configuration>
     <configuration name="SubitoDateModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Subito\Tests\Models\SubitoDateModelTest" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" scope="Class" />
     </configuration>
     <configuration name="SubitoDateModelTest2" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" scope="Class" />
     </configuration>
-    <configuration name="SubitoDateModelTest2.testDiffTotalDays" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" method="testDiffTotalDays" scope="Method" />
-    </configuration>
-    <configuration name="SubitoDateModelTest2.testIsValidDate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" method="testIsValidDate" scope="Method" />
-    </configuration>
     <configuration name="SubitoDateModelTest.testDiffMonths" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Subito\Tests\Models\SubitoDateModelTest" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" method="testDiffMonths" scope="Method" />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testIsValidDate" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testDiffTotalDays" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest.testDiffMonths" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest.testDiffMonths" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelGetDiffDaysTest" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelLeapYearCounterTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest.testDiffMonths" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testDiffTotalDays" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testIsValidDate" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelLeapYearCounterTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelGetDiffDaysTest" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest.testDiffMonths" />
       </list>
     </recent_temporary>
   </component>
@@ -376,25 +381,25 @@
       <workItem from="1515245717255" duration="597000" />
       <workItem from="1515297011127" duration="8227000" />
       <workItem from="1515330299274" duration="594000" />
-      <workItem from="1515354471003" duration="1628000" />
+      <workItem from="1515354471003" duration="2219000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SubitoDateModelTest - 2018.01.07 at 06h 36m 42s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="SubitoDateModelGetDiffDaysTest - 2018.01.07 at 21h 53m 47s.xml">
+      <configuration name="SubitoDateModelGetDiffDaysTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.07 at 06h 38m 02s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="SubitoDateModelGetDiffDaysTest - 2018.01.07 at 21h 53m 57s.xml">
+      <configuration name="SubitoDateModelGetDiffDaysTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.07 at 06h 39m 43s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="SubitoDateModelLeapYearCounterTest - 2018.01.07 at 21h 54m 37s.xml">
+      <configuration name="SubitoDateModelLeapYearCounterTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="SubitoDateModelTest - 2018.01.07 at 21h 31m 29s.xml">
       <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest2 - 2018.01.07 at 06h 39m 52s.xml">
-      <configuration name="SubitoDateModelTest2" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="SubitoDateModelTest - 2018.01.07 at 21h 53m 38s.xml">
+      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="SubitoDateModelTest2 - 2018.01.07 at 06h 41m 46s.xml">
       <configuration name="SubitoDateModelTest2" configurationId="PHPUnitRunConfigurationType" />
@@ -413,7 +418,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113761000" />
+    <option name="totallyTimeSpent" value="114352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,17 +431,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35693848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.484375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.484375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25608012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -717,20 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelGetDiffDaysTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelLeapYearCounterTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Subito/Interfaces/SubitoDateDescrInterface.php" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -739,13 +729,6 @@
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Helpers/SubitoDateHelperTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -845,6 +828,30 @@
             <element signature="e#1412#1635#0#PHP" expanded="false" />
             <element signature="e#1641#1878#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Helpers/SubitoDateHelperTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelGetDiffDaysTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelLeapYearCounterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
