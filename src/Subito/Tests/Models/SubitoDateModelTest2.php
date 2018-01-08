@@ -81,7 +81,12 @@ class SubitoDateModelTest2 extends PHPUnit_Framework_TestCase {
         $subitoDate = $this->getSubitoDateModel($startDate,$endDate);
         $subitoDateDiff = $subitoDate->diff();
         $dateDiff = $this->diff($startDate, $endDate);
-        if($dateDiff->invert)
+
+        /*if($subitoDateDiff->days !== $dateDiff->d){
+
+            echo "array('".$startDate."','".$endDate."')\n";
+        }*/
+
         $this->assertSame($subitoDateDiff->days, $dateDiff->d, "Subito: $subitoDateDiff->days PHP: ".$dateDiff->d);
     }
 
