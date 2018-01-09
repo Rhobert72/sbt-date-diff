@@ -124,22 +124,53 @@ class SubitoDateModel implements SubitoDateInterface
 
     public function getDiffDays(): int{
 
-        // Considero i giorni trascorsi nel mese della endDate
-        $days = $this->endDateDescr->dayIntValue;
+$days = 0;
 
-        if($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
-            // Mi sposto al mese precedente
-            list($prevMonth,$prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
-            $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
-            // Se è un giorno che NON appartiene a quel mese non faccio nulla
-            if($this->startDateDescr->dayIntValue <= $endDatePrevMonthDays){
-                // Calcolo quanti gg mancano alla fine del mese partendo dal giorno specificato nella startDate
-                $days += $endDatePrevMonthDays - $this->startDateDescr->dayIntValue;
+        if($this->invert){
+
+            // Ristabilisco l'ordine
+
+            list($sDate, $eDate) = [$this->endDateDescr, $this->startDateDescr];
+
+            if($sDate->dayIntValue < $eDate->dayIntValue) {
+                $days = SubitoDateHelper::getMonthDays($eDate->monthIntValue,$eDate->yearIntValue) - $eDate->dayIntValue;
+
+                $days += $sDate->dayIntValue;
+            }
+            else {
+                $days += $sDate->dayIntValue - $eDate->dayIntValue;
             }
         }
-        else {
-            $days -= $this->startDateDescr->dayIntValue;
+        else{
+
+            // Considero i giorni trascorsi nel mese della endDate
+            $days = $this->endDateDescr->dayIntValue;
+
+            if($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
+                // Mi sposto al mese precedente
+                list($prevMonth,$prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
+                $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
+                // Se è un giorno che NON appartiene a quel mese non faccio nulla
+                if($this->startDateDescr->dayIntValue <= $endDatePrevMonthDays){
+                    // Calcolo quanti gg mancano alla fine del mese partendo dal giorno specificato nella startDate
+                    $days += $endDatePrevMonthDays - $this->startDateDescr->dayIntValue;
+                }
+
+                if($this->startDateDescr->dayIntValue > $endDatePrevMonthDays) {
+                    $days -= $this->startDateDescr->dayIntValue - $endDatePrevMonthDays;
+                }
+
+            }
+            else {
+                $days -= $this->startDateDescr->dayIntValue;
+            }
+
+
         }
+
+
+
+
 
         $startDate = \DateTime::createFromFormat('Y/m/d', $this->startDate);
         $endDate = \DateTime::createFromFormat('Y/m/d', $this->endDate);

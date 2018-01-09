@@ -18,6 +18,10 @@ class SubitoDateHelper
         return [$month > 1? --$month: 12, $month > 1? $year: --$year];
     }
 
+    public static function getNextMonth(int $month, int $year) {
+        return [$month === 12? 1: ++$month, $month === 12? ++$year:$year];
+    }
+
     public static function getNumberOfLeapYears(int $startYear, int $endYear): int{
 
         if($startYear > $endYear){
