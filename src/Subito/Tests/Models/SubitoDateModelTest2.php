@@ -15,7 +15,7 @@ class SubitoDateModelTest2 extends PHPUnit_Framework_TestCase {
 
         $dates = [];
 
-        for($i = 1;$i<= 1000; $i++){
+        for($i = 1;$i<= 3000; $i++){
             $startDate = date('Y/m/d',mt_rand());
             $endDate = date('Y/m/d',mt_rand());
             $dates[$startDate.' -- '.$endDate] = [$startDate,$endDate];

@@ -9,8 +9,8 @@ use Subito\Models\SubitoDateModel;
 class SubitoDateModelTest extends PHPUnit_Framework_TestCase {
 
     private $subitoDate;
-    private $startDate = '1976/08/31';
-    private $endDate = '2017/07/14';
+    private $startDate = '1986/08/29';
+    private $endDate = '2025/03/01';
 
     protected function setUp() {
         $this->subitoDate = new SubitoDateModel($this->startDate, $this->endDate);
@@ -40,15 +40,14 @@ class SubitoDateModelTest extends PHPUnit_Framework_TestCase {
     public function testDiffMonths() {
         $subitoDateDiff = $this->subitoDate->diff();
         $dateDiff = $this->diff($this->startDate, $this->endDate);
-
-        $this->assertSame($subitoDateDiff->months, $dateDiff->m);
+        $this->assertSame($subitoDateDiff->months, $dateDiff->m,"SUBITO: $subitoDateDiff->months PHP: $dateDiff->m");
     }
 
     public function testDiffDays() {
         $subitoDateDiff = $this->subitoDate->diff();
         $dateDiff = $this->diff($this->startDate, $this->endDate);
-
-        $this->assertSame($subitoDateDiff->days, $dateDiff->d);
+echo "DAYS SUBITO: $subitoDateDiff->days PHP: $dateDiff->d";
+        $this->assertSame($subitoDateDiff->days, $dateDiff->d, "SUBITO: $subitoDateDiff->days PHP: $dateDiff->d");
     }
 
     public function testDiffTotalDays() {

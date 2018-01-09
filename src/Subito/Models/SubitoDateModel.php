@@ -16,12 +16,14 @@ class SubitoDateModel implements SubitoDateInterface
 
     public $invert = false;
 
-    public function __construct($startDate, $endDate) {
+    public function __construct($startDate, $endDate)
+    {
         $this->setStartDate($startDate);
         $this->setEndDate($endDate);
     }
 
-    public function setStartDate(string $date) {
+    public function setStartDate(string $date)
+    {
         if (!$this->isValidDate($date)) {
             throw new Exception('Start date is not a valid date');
         }
@@ -29,11 +31,13 @@ class SubitoDateModel implements SubitoDateInterface
         $this->startDate = $date;
     }
 
-    public function getStartDate(): string {
+    public function getStartDate(): string
+    {
         return $this->startDate;
     }
 
-    public function setEndDate(string $date) {
+    public function setEndDate(string $date)
+    {
         if (!$this->isValidDate($date)) {
             throw new Exception('End date is not a valid date');
         }
@@ -41,22 +45,24 @@ class SubitoDateModel implements SubitoDateInterface
         $this->endDate = $date;
     }
 
-    public function getEndDate(): string {
+    public function getEndDate(): string
+    {
         return $this->endDate;
     }
 
-    public static function isValidDate(string $date): bool {
-        try{
+    public static function isValidDate(string $date): bool
+    {
+        try {
             $dateDescr = new DateDescr($date);
             return true;
-        }
-        catch(\Exception $exc){
+        } catch (\Exception $exc) {
             return false;
         }
 
     }
 
-    public function diff(): \stdClass {
+    public function diff(): \stdClass
+    {
 
         $diff_arr = array(
             'years' => null,
@@ -71,9 +77,9 @@ class SubitoDateModel implements SubitoDateInterface
 
         $diff_arr['invert'] = $this->getInvert();
 
-        if($diff_arr['invert']){
+        if ($diff_arr['invert']) {
             $this->invert = $diff_arr['invert'];
-            list($this->startDate,$this->endDate) = [$this->endDate,$this->startDate];
+            list($this->startDate, $this->endDate) = [$this->endDate, $this->startDate];
             $this->startDateDescr = new DateDescr($this->startDate);
             $this->endDateDescr = new DateDescr($this->endDate);
         }
@@ -86,133 +92,127 @@ class SubitoDateModel implements SubitoDateInterface
         return (object)$diff_arr;
     }
 
-    private function getInvert(): int {
+    private function getInvert(): int
+    {
         return (int)!($this->startDate <= $this->endDate);
     }
 
-    private function getDiffYears(): int{
+    private function getDiffYears(): int
+    {
         $years = $this->endDateDescr->yearIntValue - $this->startDateDescr->yearIntValue;
-        if($years > 0 && $this->endDateDescr->getMonthAndDayAsString() < $this->startDateDescr->getMonthAndDayAsString()) {
+        if ($years > 0 && $this->endDateDescr->getMonthAndDayAsString() < $this->startDateDescr->getMonthAndDayAsString()) {
             $years--;
         }
         return $years;
     }
 
-    private function getDiffMonths(): int {
+    private function getDiffMonths(): int
+    {
 
         $months = 0;
 
-        if($this->endDateDescr->getMonthAndDayAsString() < $this->startDateDescr->getMonthAndDayAsString()){
+        if ($this->endDateDescr->getMonthAndDayAsString() < $this->startDateDescr->getMonthAndDayAsString()) {
             $months = 12 - $this->startDateDescr->monthIntValue + $this->endDateDescr->monthIntValue;
-        }
-        else{
+        } else {
             $months = $this->endDateDescr->monthIntValue - $this->startDateDescr->monthIntValue;
         }
 
-        if($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue){
+        if ($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
             $months--;
         }
 
-        /*if($this->endDateDescr->monthIntValue === 3 && $this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue){
-            echo ">>>>>>>>>>>>>>>>>>>>>>>";
-            $months--;
+        /*if ($this->endDateDescr->monthIntValue === 3 && !$this->endDateDescr->dayIntValue >= 2) {
+
+            $febDays = SubitoDateHelper::getMonthDays(2, $this->endDateDescr->yearIntValue);
+            if ($febDays < $this->startDateDescr->dayIntValue) {
+                $months--;
+            }
+
         }*/
+
+        if ($this->endDateDescr->monthIntValue === 3 && $this->endDateDescr->dayIntValue <= 2) {
+            $days = $this->getDaysDiffFirstDaysOfMarch();
+
+            echo "DAYS: \n";
+
+
+            if($days >= 30 && !$this->invert) $months--;
+            if($this->invert){
+                $months++;
+            }
+        }
 
         return $months;
 
     }
 
-    public function getDiffDays(): int{
+    public function getDiffDays(): int
+    {
 
-$days = 0;
+        $days = 0;
 
-        if($this->invert){
+        if ($this->invert) {
 
             // Ristabilisco l'ordine
 
             list($sDate, $eDate) = [$this->endDateDescr, $this->startDateDescr];
 
-            if($sDate->dayIntValue < $eDate->dayIntValue) {
-                $days = SubitoDateHelper::getMonthDays($eDate->monthIntValue,$eDate->yearIntValue) - $eDate->dayIntValue;
-
+            if ($sDate->dayIntValue < $eDate->dayIntValue) {
+                $days = SubitoDateHelper::getMonthDays($eDate->monthIntValue, $eDate->yearIntValue) - $eDate->dayIntValue;
                 $days += $sDate->dayIntValue;
-            }
-            else {
+            } else {
                 $days += $sDate->dayIntValue - $eDate->dayIntValue;
             }
-        }
-        else{
+        } else {
 
             // Considero i giorni trascorsi nel mese della endDate
             $days = $this->endDateDescr->dayIntValue;
 
-            if($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
-                // Mi sposto al mese precedente
-                list($prevMonth,$prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
-                $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
-                // Se è un giorno che NON appartiene a quel mese non faccio nulla
-                if($this->startDateDescr->dayIntValue <= $endDatePrevMonthDays){
-                    // Calcolo quanti gg mancano alla fine del mese partendo dal giorno specificato nella startDate
-                    $days += $endDatePrevMonthDays - $this->startDateDescr->dayIntValue;
-                }
+            if ($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
 
-                if($this->startDateDescr->dayIntValue > $endDatePrevMonthDays) {
-                    $days -= $this->startDateDescr->dayIntValue - $endDatePrevMonthDays;
-                }
+                if ($this->endDateDescr->monthIntValue === 3 && $this->endDateDescr->dayIntValue <= 2) {
+                    $days = $this->getDaysDiffFirstDaysOfMarch();
+                } else {
+                    // Mi sposto al mese precedente
+                    list($prevMonth, $prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
+                    $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
+                    // Se è un giorno che NON appartiene a quel mese non faccio nulla
+                    if ($this->startDateDescr->dayIntValue <= $endDatePrevMonthDays) {
+                        // Calcolo quanti gg mancano alla fine del mese partendo dal giorno specificato nella startDate
+                        $days += $endDatePrevMonthDays - $this->startDateDescr->dayIntValue;
+                    }
 
-            }
-            else {
+                    if ($this->startDateDescr->dayIntValue > $endDatePrevMonthDays) {
+                        $days -= $this->startDateDescr->dayIntValue - $endDatePrevMonthDays;
+                    }
+                }
+            } else {
                 $days -= $this->startDateDescr->dayIntValue;
             }
 
-
         }
-
-
-
-
-
-        $startDate = \DateTime::createFromFormat('Y/m/d', $this->startDate);
-        $endDate = \DateTime::createFromFormat('Y/m/d', $this->endDate);
-
-        $diff = $startDate->diff($endDate);
-
-        /*echo "-----------------------------\n";
-        echo "SUBITO: ".$days." -- PHP: ".$diff->d."\n";
-        echo "INVERT: ".($this->invert?'YES':'NO')."\n";
-
-        echo "--- START DATE ---"."\n";
-        echo "START DATE: ".$this->startDate."\n";
-
-
-        echo "--- END DATE ---"."\n";
-        echo "DATE: ".$this->endDate."\n";
-        echo "LEAP YEAR: ".(SubitoDateHelper::isLeapYear($this->endDateDescr->yearIntValue)?'LEAP':'NOT LEAP')."\n";
-
-        echo "-----------------------------\n";*/
-
         return $days;
     }
 
-    private function getTotalDays(): int{
+    private function getTotalDays(): int
+    {
 
         $total_days = 0;
 
-        if($this->startDateDescr->yearIntValue !== $this->endDateDescr->yearIntValue){
+        if ($this->startDateDescr->yearIntValue !== $this->endDateDescr->yearIntValue) {
 
             // anni differenti
             $total_days += $this->startDateDescr->getDaysToTheEndOfTheYear();
             $total_days += $this->endDateDescr->getDaysFromTheBeginningOfTheYear();
 
-            if($this->startDateDescr->yearIntValue + 1 < $this->endDateDescr->yearIntValue){
+            if ($this->startDateDescr->yearIntValue + 1 < $this->endDateDescr->yearIntValue) {
                 $leapYears = SubitoDateHelper::getNumberOfLeapYears($this->startDateDescr->yearIntValue + 1, $this->endDateDescr->yearIntValue - 1);
                 $normalYears = SubitoDateHelper::getNumberOfNormalYears($this->startDateDescr->yearIntValue + 1, $this->endDateDescr->yearIntValue - 1);
                 $total_days += 366 * $leapYears;
                 $total_days += 365 * $normalYears;
             }
 
-        }
-        else{
+        } else {
             // stesso anno
             $total_days += $this->endDateDescr->getDaysFromTheBeginningOfTheYear();
             $total_days -= $this->startDateDescr->getDaysFromTheBeginningOfTheYear();
@@ -220,6 +220,33 @@ $days = 0;
 
         return $total_days;
 
+    }
+
+    private function getDaysDiffFirstDaysOfMarch(): int {
+        $days = 0;
+        $febDays = SubitoDateHelper::getMonthDays(2, $this->endDateDescr->yearIntValue);
+
+        if($this->startDateDescr->dayIntValue >= $febDays){
+            $diff = $this->startDateDescr->dayIntValue - $febDays;
+echo "DIFF: $diff\n";
+
+            if($diff < 0){
+
+                $days =$this->endDateDescr->dayIntValue + $diff;
+            }
+            if($diff >= 0){
+                $days = $febDays + ($this->endDateDescr->dayIntValue - $diff) + (SubitoDateHelper::getMonthDays(1,$this->endDateDescr->yearIntValue) - $this->startDateDescr->dayIntValue);
+                $days += $diff;
+            }
+            else{
+                $days = 0;
+            }
+
+        }
+        else {
+            $days = $febDays - $this->startDateDescr->dayIntValue + $this->endDateDescr->dayIntValue;
+        }
+        return $days;
     }
 
 }
