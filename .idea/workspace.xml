@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8d8f66-126d-45d9-b05b-570253023a57" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertOne.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertZero.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/Subito/Models/SubitoDateModel.php" afterPath="$PROJECT_DIR$/src/Subito/Models/SubitoDateModel.php" />
       <change beforePath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" afterPath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" />
-      <change beforePath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" afterPath="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +23,8 @@
       <file leaf-file-name="SubitoDateModelTest2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="29">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -32,15 +33,15 @@
       <file leaf-file-name="SubitoDateModelTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="63">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
-                <element signature="e#292#409#0#PHP" expanded="false" />
-                <element signature="e#415#486#0#PHP" expanded="false" />
-                <element signature="e#492#695#0#PHP" expanded="false" />
-                <element signature="e#701#901#0#PHP" expanded="false" />
-                <element signature="e#907#1132#0#PHP" expanded="false" />
-                <element signature="e#1762#1999#0#PHP" expanded="false" />
+                <element signature="e#320#437#0#PHP" expanded="false" />
+                <element signature="e#443#514#0#PHP" expanded="false" />
+                <element signature="e#520#723#0#PHP" expanded="false" />
+                <element signature="e#729#929#0#PHP" expanded="false" />
+                <element signature="e#935#1160#0#PHP" expanded="false" />
+                <element signature="e#1166#1444#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -49,15 +50,45 @@
       <file leaf-file-name="SubitoDateModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Subito/Models/SubitoDateModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="232" column="22" lean-forward="false" selection-start-line="232" selection-start-column="22" selection-end-line="232" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="130" column="18" lean-forward="false" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
               <folding>
                 <element signature="e#33#69#0#PHP" expanded="true" />
                 <element signature="e#1063#1288#0#PHP" expanded="false" />
                 <element signature="e#1294#2273#0#PHP" expanded="false" />
                 <element signature="e#2389#2707#0#PHP" expanded="false" />
-                <element signature="e#5961#7086#0#PHP" expanded="false" />
+                <element signature="e#6017#7142#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateDescr.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Subito/Models/DateDescr.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubitoDateModelTestInvertZero.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertZero.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubitoDateModelTestInvertOne.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertOne.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,7 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>str_p</find>
       <find>total</find>
       <find>var_dump</find>
       <find>help</find>
@@ -96,6 +126,7 @@
       <find>&gt;&gt;&gt;&gt;&gt;&gt;</find>
       <find>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</find>
       <find>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</find>
+      <find>DIFF:</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -123,6 +154,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Subito/Helpers/SubitoDateHelper.php" />
         <option value="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" />
+        <option value="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertZero.php" />
+        <option value="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertOne.php" />
         <option value="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" />
         <option value="$PROJECT_DIR$/src/Subito/Models/SubitoDateModel.php" />
       </list>
@@ -185,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,7 +270,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -248,13 +281,13 @@
     <property name="SearchEverywhereHistoryKey" value="stdC&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Subito/Tests/Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Subito/Tests/Models" />
       <recent name="$PROJECT_DIR$/src/Subito/Tests/helpers" />
       <recent name="$PROJECT_DIR$/src/Subito/Tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Subito/Tests/Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,32 +306,32 @@
     <configuration name="SubitoDateModelTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Subito\Tests\Models\SubitoDateModelTest" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" scope="Class" />
     </configuration>
+    <configuration name="SubitoDateModelTest2 (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertOne.php" scope="Class" />
+    </configuration>
     <configuration name="SubitoDateModelTest2" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" scope="Class" />
     </configuration>
-    <configuration name="SubitoDateModelTest2.testDiffDays" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" method="testDiffDays" scope="Method" />
+    <configuration name="SubitoDateModelTestInvertOne" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Subito\Tests\Models\SubitoDateModelTestInvertOne" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertOne.php" scope="Class" />
     </configuration>
-    <configuration name="SubitoDateModelTest2.testDiffMonths" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Subito\Tests\Models\SubitoDateModelTest2" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php" method="testDiffMonths" scope="Method" />
-    </configuration>
-    <configuration name="SubitoDateModelTest.testDiffDays" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Subito\Tests\Models\SubitoDateModelTest" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php" method="testDiffDays" scope="Method" />
+    <configuration name="SubitoDateModelTestInvertZero" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Subito\Tests\Models\SubitoDateModelTestInvertZero" file="$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertZero.php" scope="Class" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testDiffDays" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testDiffMonths" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest.testDiffDays" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2 (1)" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTestInvertOne" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTestInvertZero" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest" />
         <item index="1" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest.testDiffDays" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testDiffDays" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2.testDiffMonths" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTestInvertOne" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTestInvertZero" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.SubitoDateModelTest2 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -326,44 +359,46 @@
       <workItem from="1515386519215" duration="598000" />
       <workItem from="1515406546999" duration="3533000" />
       <workItem from="1515417407459" duration="1668000" />
-      <workItem from="1515453021729" duration="19084000" />
+      <workItem from="1515453021729" duration="19200000" />
+      <workItem from="1515558768864" duration="5806000" />
+      <workItem from="1515585582194" duration="5866000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 11h 51m 31s.xml">
+    <history-entry file="SubitoDateModelTest - 2018.01.10 at 16h 23m 43s.xml">
       <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 11h 51m 53s.xml">
+    <history-entry file="SubitoDateModelTest - 2018.01.10 at 16h 24m 00s.xml">
       <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 11h 51m 58s.xml">
+    <history-entry file="SubitoDateModelTest - 2018.01.10 at 16h 24m 39s.xml">
       <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 11h 52m 05s.xml">
+    <history-entry file="SubitoDateModelTest - 2018.01.10 at 16h 25m 33s.xml">
       <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 11h 52m 39s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 11h 52m 55s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 12h 03m 25s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 12h 07m 23s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SubitoDateModelTest - 2018.01.09 at 12h 08m 10s.xml">
-      <configuration name="SubitoDateModelTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SubitoDateModelTest2 - 2018.01.09 at 11h 34m 12s.xml">
+    <history-entry file="SubitoDateModelTest2 - 2018.01.10 at 16h 22m 10s.xml">
       <configuration name="SubitoDateModelTest2" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubitoDateModelTestInvertOne - 2018.01.10 at 16h 21m 02s.xml">
+      <configuration name="SubitoDateModelTestInvertOne" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubitoDateModelTestInvertOne - 2018.01.10 at 16h 21m 20s.xml">
+      <configuration name="SubitoDateModelTestInvertOne" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubitoDateModelTestInvertOne - 2018.01.10 at 16h 21m 40s.xml">
+      <configuration name="SubitoDateModelTestInvertOne" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubitoDateModelTestInvertZero - 2018.01.10 at 16h 20m 17s.xml">
+      <configuration name="SubitoDateModelTestInvertZero" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SubitoDateModelTestInvertZero - 2018.01.10 at 16h 20m 43s.xml">
+      <configuration name="SubitoDateModelTestInvertZero" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139513000" />
+    <option name="totallyTimeSpent" value="151301000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,24 +411,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3769671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.484375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.484375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25608012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -403,18 +439,18 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.484375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.484375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3769671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25608012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25608012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,38 +468,22 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Subito/Models/DateDescr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="103" column="124" lean-forward="false" selection-start-line="103" selection-start-column="124" selection-end-line="103" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <element signature="e#292#409#0#PHP" expanded="false" />
-            <element signature="e#415#486#0#PHP" expanded="false" />
-            <element signature="e#492#695#0#PHP" expanded="false" />
-            <element signature="e#701#901#0#PHP" expanded="false" />
-            <element signature="e#907#1132#0#PHP" expanded="false" />
-            <element signature="e#1762#1999#0#PHP" expanded="false" />
+            <element signature="e#320#437#0#PHP" expanded="false" />
+            <element signature="e#443#514#0#PHP" expanded="false" />
+            <element signature="e#520#723#0#PHP" expanded="false" />
+            <element signature="e#729#929#0#PHP" expanded="false" />
+            <element signature="e#935#1160#0#PHP" expanded="false" />
+            <element signature="e#1166#1444#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -500,7 +520,7 @@
             <element signature="e#1063#1288#0#PHP" expanded="false" />
             <element signature="e#1294#2273#0#PHP" expanded="false" />
             <element signature="e#2389#2707#0#PHP" expanded="false" />
-            <element signature="e#5961#7086#0#PHP" expanded="false" />
+            <element signature="e#6017#7142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -509,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -525,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,12 +560,12 @@
         <state relative-caret-position="90">
           <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <element signature="e#292#409#0#PHP" expanded="false" />
-            <element signature="e#415#486#0#PHP" expanded="false" />
-            <element signature="e#492#695#0#PHP" expanded="false" />
-            <element signature="e#701#901#0#PHP" expanded="false" />
-            <element signature="e#907#1132#0#PHP" expanded="false" />
-            <element signature="e#1762#1999#0#PHP" expanded="false" />
+            <element signature="e#320#437#0#PHP" expanded="false" />
+            <element signature="e#443#514#0#PHP" expanded="false" />
+            <element signature="e#520#723#0#PHP" expanded="false" />
+            <element signature="e#729#929#0#PHP" expanded="false" />
+            <element signature="e#935#1160#0#PHP" expanded="false" />
+            <element signature="e#1166#1444#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -584,7 +602,7 @@
             <element signature="e#1063#1288#0#PHP" expanded="false" />
             <element signature="e#1294#2273#0#PHP" expanded="false" />
             <element signature="e#2389#2707#0#PHP" expanded="false" />
-            <element signature="e#5961#7086#0#PHP" expanded="false" />
+            <element signature="e#6017#7142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -593,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,12 +650,12 @@
         <state relative-caret-position="120">
           <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
-            <element signature="e#292#409#0#PHP" expanded="false" />
-            <element signature="e#415#486#0#PHP" expanded="false" />
-            <element signature="e#492#695#0#PHP" expanded="false" />
-            <element signature="e#701#901#0#PHP" expanded="false" />
-            <element signature="e#907#1132#0#PHP" expanded="false" />
-            <element signature="e#1762#1999#0#PHP" expanded="false" />
+            <element signature="e#320#437#0#PHP" expanded="false" />
+            <element signature="e#443#514#0#PHP" expanded="false" />
+            <element signature="e#520#723#0#PHP" expanded="false" />
+            <element signature="e#729#929#0#PHP" expanded="false" />
+            <element signature="e#935#1160#0#PHP" expanded="false" />
+            <element signature="e#1166#1444#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -660,7 +677,7 @@
             <element signature="e#1063#1288#0#PHP" expanded="false" />
             <element signature="e#1294#2273#0#PHP" expanded="false" />
             <element signature="e#2389#2707#0#PHP" expanded="false" />
-            <element signature="e#5961#7086#0#PHP" expanded="false" />
+            <element signature="e#6017#7142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,12 +710,12 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#292#409#0#PHP" expanded="false" />
-            <element signature="e#415#486#0#PHP" expanded="false" />
-            <element signature="e#492#695#0#PHP" expanded="false" />
-            <element signature="e#701#901#0#PHP" expanded="false" />
-            <element signature="e#907#1132#0#PHP" expanded="false" />
-            <element signature="e#1762#1999#0#PHP" expanded="false" />
+            <element signature="e#320#437#0#PHP" expanded="false" />
+            <element signature="e#443#514#0#PHP" expanded="false" />
+            <element signature="e#520#723#0#PHP" expanded="false" />
+            <element signature="e#729#929#0#PHP" expanded="false" />
+            <element signature="e#935#1160#0#PHP" expanded="false" />
+            <element signature="e#1166#1444#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,7 +736,7 @@
             <element signature="e#1063#1288#0#PHP" expanded="false" />
             <element signature="e#1294#2273#0#PHP" expanded="false" />
             <element signature="e#2389#2707#0#PHP" expanded="false" />
-            <element signature="e#5961#7086#0#PHP" expanded="false" />
+            <element signature="e#6017#7142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -741,7 +757,7 @@
             <element signature="e#1063#1288#0#PHP" expanded="false" />
             <element signature="e#1294#2273#0#PHP" expanded="false" />
             <element signature="e#2389#2707#0#PHP" expanded="false" />
-            <element signature="e#5961#7086#0#PHP" expanded="false" />
+            <element signature="e#6017#7142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,12 +774,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#292#409#0#PHP" expanded="false" />
-            <element signature="e#415#486#0#PHP" expanded="false" />
-            <element signature="e#492#695#0#PHP" expanded="false" />
-            <element signature="e#701#901#0#PHP" expanded="false" />
-            <element signature="e#907#1132#0#PHP" expanded="false" />
-            <element signature="e#1762#1999#0#PHP" expanded="false" />
+            <element signature="e#320#437#0#PHP" expanded="false" />
+            <element signature="e#443#514#0#PHP" expanded="false" />
+            <element signature="e#520#723#0#PHP" expanded="false" />
+            <element signature="e#729#929#0#PHP" expanded="false" />
+            <element signature="e#935#1160#0#PHP" expanded="false" />
+            <element signature="e#1166#1444#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,15 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Subito/Models/DateDescr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,39 +882,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subito/Models/DateDescr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertZero.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTestInvertOne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="29">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Subito/Tests/Models/SubitoDateModelTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="63">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
-            <element signature="e#292#409#0#PHP" expanded="false" />
-            <element signature="e#415#486#0#PHP" expanded="false" />
-            <element signature="e#492#695#0#PHP" expanded="false" />
-            <element signature="e#701#901#0#PHP" expanded="false" />
-            <element signature="e#907#1132#0#PHP" expanded="false" />
-            <element signature="e#1762#1999#0#PHP" expanded="false" />
+            <element signature="e#320#437#0#PHP" expanded="false" />
+            <element signature="e#443#514#0#PHP" expanded="false" />
+            <element signature="e#520#723#0#PHP" expanded="false" />
+            <element signature="e#729#929#0#PHP" expanded="false" />
+            <element signature="e#935#1160#0#PHP" expanded="false" />
+            <element signature="e#1166#1444#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Subito/Models/SubitoDateModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="232" column="22" lean-forward="false" selection-start-line="232" selection-start-column="22" selection-end-line="232" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="130" column="18" lean-forward="false" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
           <folding>
             <element signature="e#33#69#0#PHP" expanded="true" />
             <element signature="e#1063#1288#0#PHP" expanded="false" />
             <element signature="e#1294#2273#0#PHP" expanded="false" />
             <element signature="e#2389#2707#0#PHP" expanded="false" />
-            <element signature="e#5961#7086#0#PHP" expanded="false" />
+            <element signature="e#6017#7142#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

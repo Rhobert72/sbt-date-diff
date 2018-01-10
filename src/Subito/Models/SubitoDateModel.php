@@ -113,34 +113,33 @@ class SubitoDateModel implements SubitoDateInterface
 
         if ($this->endDateDescr->getMonthAndDayAsString() < $this->startDateDescr->getMonthAndDayAsString()) {
             $months = 12 - $this->startDateDescr->monthIntValue + $this->endDateDescr->monthIntValue;
+
         } else {
             $months = $this->endDateDescr->monthIntValue - $this->startDateDescr->monthIntValue;
         }
 
         if ($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
+
             $months--;
-        }
 
-        /*if ($this->endDateDescr->monthIntValue === 3 && !$this->endDateDescr->dayIntValue >= 2) {
+            // Mi sposto al mese precedente
+            list($prevMonth, $prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
+            $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
 
-            $febDays = SubitoDateHelper::getMonthDays(2, $this->endDateDescr->yearIntValue);
-            if ($febDays < $this->startDateDescr->dayIntValue) {
-                $months--;
+            if ($this->startDateDescr->dayIntValue > $endDatePrevMonthDays) {
+                $days = $this->getSpecialTotalDays();
+                //echo "------->DDDDDDDAYS: $days\n";
+                if($days < 31){
+                   if(!$this->invert) $months--;
+                }
+
             }
 
-        }*/
-
-        if ($this->endDateDescr->monthIntValue === 3 && $this->endDateDescr->dayIntValue <= 2) {
-            $days = $this->getDaysDiffFirstDaysOfMarch();
-
-            echo "DAYS: \n";
-
-
-            if($days >= 30 && !$this->invert) $months--;
-            if($this->invert){
-                $months++;
-            }
         }
+
+
+
+        //$this->getSpecialTotalDays()
 
         return $months;
 
@@ -170,22 +169,30 @@ class SubitoDateModel implements SubitoDateInterface
 
             if ($this->startDateDescr->dayIntValue > $this->endDateDescr->dayIntValue) {
 
-                if ($this->endDateDescr->monthIntValue === 3 && $this->endDateDescr->dayIntValue <= 2) {
-                    $days = $this->getDaysDiffFirstDaysOfMarch();
-                } else {
-                    // Mi sposto al mese precedente
-                    list($prevMonth, $prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
-                    $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
-                    // Se è un giorno che NON appartiene a quel mese non faccio nulla
-                    if ($this->startDateDescr->dayIntValue <= $endDatePrevMonthDays) {
-                        // Calcolo quanti gg mancano alla fine del mese partendo dal giorno specificato nella startDate
-                        $days += $endDatePrevMonthDays - $this->startDateDescr->dayIntValue;
+                // Mi sposto al mese precedente
+                list($prevMonth, $prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
+                $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
+
+                if ($this->startDateDescr->dayIntValue <= $endDatePrevMonthDays) {
+                    // Calcolo quanti gg mancano alla fine del mese partendo dal giorno specificato nella startDate
+                    $days += $endDatePrevMonthDays - $this->startDateDescr->dayIntValue;
+                }
+                else {
+
+                    // Mi sposto al mese precedente a quello precedentemente considerato
+                    // ES. endDateDescr->monthIntValue = Marzo -> Febbraio -> Gennaio
+
+                    $days = $this->getSpecialTotalDays();
+                    //echo "DDDDDDDAYS: $days\n";
+                    if($days > 31){
+                        $days -= 31; // Verrà considerato un mese in più
+                    }
+                    else if($days === 31){
+                        $days = 0; // Verrà considerato un mese in più
                     }
 
-                    if ($this->startDateDescr->dayIntValue > $endDatePrevMonthDays) {
-                        $days -= $this->startDateDescr->dayIntValue - $endDatePrevMonthDays;
-                    }
                 }
+
             } else {
                 $days -= $this->startDateDescr->dayIntValue;
             }
@@ -222,31 +229,18 @@ class SubitoDateModel implements SubitoDateInterface
 
     }
 
-    private function getDaysDiffFirstDaysOfMarch(): int {
-        $days = 0;
-        $febDays = SubitoDateHelper::getMonthDays(2, $this->endDateDescr->yearIntValue);
+    private function getSpecialTotalDays(): int {
 
-        if($this->startDateDescr->dayIntValue >= $febDays){
-            $diff = $this->startDateDescr->dayIntValue - $febDays;
-echo "DIFF: $diff\n";
+        list($prevMonth, $prevYear) = SubitoDateHelper::getPreviousMonth($this->endDateDescr->monthIntValue, $this->endDateDescr->yearIntValue);
+        $endDatePrevMonthDays = SubitoDateHelper::getMonthDays($prevMonth, $prevYear);
 
-            if($diff < 0){
+        list($prevPrevMonth, $prevPrevYear) = SubitoDateHelper::getPreviousMonth($prevMonth, $prevYear);
+        $endDatePrevPrevMonthDays = SubitoDateHelper::getMonthDays($prevPrevMonth, $prevPrevYear);
 
-                $days =$this->endDateDescr->dayIntValue + $diff;
-            }
-            if($diff >= 0){
-                $days = $febDays + ($this->endDateDescr->dayIntValue - $diff) + (SubitoDateHelper::getMonthDays(1,$this->endDateDescr->yearIntValue) - $this->startDateDescr->dayIntValue);
-                $days += $diff;
-            }
-            else{
-                $days = 0;
-            }
+        $prevPrevMonthDaysTotheEndOfTheMonth = $endDatePrevPrevMonthDays - $this->startDateDescr->dayIntValue;
 
-        }
-        else {
-            $days = $febDays - $this->startDateDescr->dayIntValue + $this->endDateDescr->dayIntValue;
-        }
-        return $days;
+        return $prevPrevMonthDaysTotheEndOfTheMonth + $this->endDateDescr->dayIntValue + $endDatePrevMonthDays;
+
     }
 
 }
